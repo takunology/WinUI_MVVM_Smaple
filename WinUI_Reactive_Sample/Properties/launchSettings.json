@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUI_Reactive_Sample (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUI_Reactive_Sample (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

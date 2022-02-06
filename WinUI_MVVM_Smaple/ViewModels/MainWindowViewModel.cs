@@ -14,36 +14,29 @@ namespace WinUI_MVVM_Smaple.ViewModels
         private int _inputB;
         private int _output;
 
-        public string InputA
+        public int InputA
         {
-            get => _inputA.ToString();
+            get => _inputA;
             set
             {
-                _inputA = int.Parse(value);
+                _inputA = value;
                 OnPropertyChanged();
                 OnPropertyChanged(nameof(Output));
             }
         }
 
-        public string InputB
+        public int InputB
         {
-            get => _inputB.ToString();
+            get => _inputB;
             set
             {
-                _inputB = int.Parse(value);
+                _inputB = value;
                 OnPropertyChanged();
                 OnPropertyChanged(nameof(Output));
             }
         }
 
-        public string Output
-        {
-            get
-            {
-                _output = Models.Calc.Sum(_inputA, _inputB);
-                return _output.ToString();
-            }
-        }
+        public int Output => _output = Models.Calc.Sum(_inputA, _inputB);
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
