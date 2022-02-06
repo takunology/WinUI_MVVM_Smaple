@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUI_MVVM_Smaple (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUI_MVVM_Smaple (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
